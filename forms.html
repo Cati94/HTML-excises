@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    HTML
+    <h1>Formulário de inscrição</h1>
+
+<body>
+    <!--Campos do formulário-->
+
+    <p>Dados Pessoais</p>
+
+    <!--Nome-->
+    <form>
+        <label for="name">nome completo:</label><br>
+        <input type="text" id="name" name="name"><br>
+    </form>
+
+    <!--Escolher género-->
+    <form>
+        <p>Escolha o seu genero</p>
+
+        <input type="checkbox" name="feminino" value="feminino" /> feminino<br />
+        <input type="checkbox" name="masculino" value="masculino" /> masculino<br />
+
+
+        <!-- Data de nascimento-->
+        <form>
+            <div>
+                <label for="dateborn">Informe a data do seu aniversário:</label>
+                <input type="date" id="dateborn" name="dateborn">
+            </div>
+        </form>
+
+        <!--Documento de identificacao-->
+
+        <form>
+            <label for="nidentidade"> inserir numero de identificacao</label>
+            <input type="number" id="nidentidade" name="nidentidade" min="1" max="">
+        </form>
+
+
+        <!--Data de validade do documento de identificacao-->
+        <form>
+            <div>
+                <label for="valid">Informe a data de validade do documento de identificacao:</label>
+                <input type="date" id="valid" name="valid">
+            </div>
+        </form>
+
+
+        <!--Documento de NIF-->
+
+        <form>
+            <label for="nif">NIF</label>
+            <input type="number" id="nif" name="nif" min="1" max="">
+        </form>
+
+        <!--Documento de seguranca social-->
+
+        <form>
+            <label for="nss">Seguranca social</label>
+            <input type="number" id="nss" name="nss" min="1" max="">
+        </form>
+
+        <!--IBAN-->
+
+        <form>
+            <label for="iban">IBAN:</label><br>
+            <input type="text" id="iban" name="iban"><br>
+        </form>
+
+
+        <!--- Dados de contacto-->
+        <p>Dados de contacto</p>
+
+        <!--Escolher país-->
+    </form>
+    <form action="/action_page.php" method="get">
+        <label for="pais">Escolha o país</label>
+        <input list="pais" name="pais" id="pais">
+        <datalist id="pais">
+            <option value="Portugal">
+            <option value="Espanha">
+            <option value="Alemanha">
+            <option value="Austria">
+            <option value="Bulgaria">
+            <option value="Bélgica">
+            <option value="Chipre">
+            <option value="Chéquia">
+            <option value="Croacia">
+            <option value="Dinamarca">
+            <option value="Eslovaquia">
+            <option value="Eslovenia">
+            <option value="Estonia">
+            <option value="Finlandia">
+            <option value="França">
+            <option value="Grécia">
+            <option value="Hungria">
+            <option value="Irlanda">
+            <option value="Itália">
+            <option value="Letónia">
+            <option value="Lituania">
+            <option value="Luxamburgo">
+            <option value="Malta">
+            <option value="Países baixos">
+            <option value="Roménia">
+            <option value="Polónia">
+            <option value="Suécia">
+            </option>
+        </datalist>
+          <input type="submit">
+
+    </form>
+
+
+    <!--Escolher distrito-->
+    <form action="/action_page.php" method="get">
+        <label for="distrito">Escolha o distrito</label>
+        <input list="distrito" name="distrito" id="distrito">
+        <datalist id="distrito">
+            <option value="Aveiro">
+            <option value="Beja">
+            <option value="Braga">
+            <option value="Bragança">
+            <option value="Castelo Branco">
+            <option value="Coimbra">
+            <option value="Évora">
+            <option value="Faro">
+            <option value="Guarda">
+            <option value="Leiria">
+            <option value="Lisboa">
+            <option value="Portalegre">
+            <option value="Porto">
+            <option value="Santarém">
+            <option value="Setúbal">
+            <option value="Viana do Castelo">
+            <option value="Vila Real">
+            <option value="Viseu">
+            </option>
+        </datalist>
+         <input type="submit">
+    </form>
+    <!--Concelho-->
+    <form>
+        <label for="concelho">concelho</label><br>
+        <input type="text" id="concelho" name="concelho"><br>
+    </form>
+    <!--Naturalidade-->
+    <form>
+        <label for="naturalidade">naturalidade</label><br>
+        <input type="text" id="naturalidade" name="naturalidade"><br>
+    </form>
+    <!--Nacionalidade-->
+    <form>
+        <label for="nacionalidade">nacionalidade</label><br>
+        <input type="text" id="nacionalidade" name="nacionalidade"><br>
+    </form>
+    <!--Campo telefone-->
+    <form>
+        <label for="phone">Numero telefone</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    </form>
+    <!--Inserir email-->
+
+    <input type="email" placeholder="sophie@example.com" />
+
+
+    <p>Dados profissionais</p>
+
+    <!--Empresa-->
+    <form>
+        <label for="empresa">Empresa</label><br>
+        <input type="text" id="empresa" name="empresa"><br>
+    </form>
+
+    <!--Data da situação de desemprego-->
+    <form>
+        <div>
+            <label for="dsitemp">Informe a data de situacao de desemprego</label>
+            <input type="date" id="dsitemp" name="dsitemp">
+        </div>
+    </form>
+
+    <!--Habilitações-->
+    </form>
+    <p>Grau</p>
+
+    <select multiple name="Grau" size="4">
+        <option value="2EB" selected>2º ciclo do ensino básico</option>
+        <option value="3EB">3º ciclo do ensino básico</option>
+        <option value="ES">Ensino secundário</option>
+        <option value="Lic">Licenciatura</option>
+        <option value="Mes">Mestrado</option>
+        <option value="Doc">Doutoramento</option>
+         <input type="submit">
+    </select><br />
+
+    <!--Situação profissional-->
+    </form>
+
+    <p>situação profissional</p>
+
+    <select multiple name="sitprof" size="4">
+        <option value="D1emp" selected>Desemprego 1º emprego</option>
+        <option value="DLD">desemprego superior a 1 ano</option>
+        <option value="NDLD">desemprego inferior a 1 ano</option>
+        <option value="EmpOut">emprego por conta de outrém</option>
+        <option value="EmpProp">emprego por conta própria</option>
+        <option value="InatForm">inativos frequentam ações de formação</option>
+        <option value="InatOut">inativos outros</option>
+         <input type="submit">
+    </select><br />
+
+
+    <!--Botões de input documentos-->
+    <p>Documentos necessários
+        A entrega dos documentos seguintes é obrigatória para a frequência do curso. Caso não os submeta nesta altura,
+        deverá envia-los por email até o inicio do curso, apenas nessa fase a sua inscrição será validade e aceite.</p>
+    <form>
+        <label for="curriculo">Selecione o ficheiro curriculo</label>
+        <input type="file" id="curriculo" name="curriculo">
+    </form>
+    <form>
+        <label for="ibanfile">Selecione o ficheiro iban</label>
+        <input type="file" id="ibanfile" name="ibanfile">
+    </form>
+    <form>
+        <label for="chablit">Selecione o ficheiro certificado de Habilitações</label>
+        <input type="file" id="chablit" name="chablit">
+    </form>
+    <form>
+        <label for="cemp">Selecione o ficheiro comprovativo emprego(se desempregado: declaração centro emprego,
+            se empregado: declaração empresa onde conste o horário de trabalho)</label>
+        <input type="file" id="cemp" name="cemp">
+    </form>
+    <!--Termos e condicoes-->
+
+    <p>Termos e Condições:</p>
+
+
+    <p> - A realização da ação está sujeita a um número mínimo de participantes
+        - O número de participantes é limitado;
+        - O processo de seleção é definido em função da tipologia do projeto de formação
+        - A inscrição só é considerada quando toda a documentação está entregue.
+        - A inscrição será considerada pela ordem cronológica de chegada;
+        - As datas e os horários dos cursos poderão sofrer alterações por motivos imprevistos;
+        - A pós o final da ação será atribuído um certificado de qualificação aos participantes com aproveitamento e com
+        uma assiduidade superior a 90% do número total de horas da ação de formação;
+        - Os dados solicitados sobre o participante são obrigatórios para validação da inscrição e posterior emissão do
+        Certificado de Formação Profissional na plataforma do Sistema Integrado de Informação e Gestāo da Oferta
+        Educativa e Formativa (SIGO).</p>
+
+
+    <!--Autorizacoes-->
+    <p>Deverá escolher uma opção:</p>
+    <form>
+        <p>- Autorizo que utilizem os meus dados pessoais, para futuros contactos.
+            <input type="checkbox" name="sim" value="sim" /> sim <br />
+            <input type="checkbox" name="não" value="não" /> não<br />
+        <form>
+            <p>- Desejo subscrever o meu email na vossa base de dados para receber futuras informações comerciais.</p>
+            <input type="checkbox" name="sim" value="sim" /> sim <br />
+            <input type="checkbox" name="não" value="não" /> não<br />
+            <form>
+                <input type="checkbox" name="Aceito" value="Aceito" />Aceito os termos e condições, assim como as
+                políticas de privacidade. <br />
+            </form>
+            <!--Botão reset-->
+            <input type="reset" value="Delete" />
+
+            <!--Botão de envio-->
+        </form>
+        <form method="post" action="mailto:email@example.com">
+            <input type="submit" value="submeter" />
+        </form>
+    </form>
+
+</body>
+
+
+</head>
+
+</html>
