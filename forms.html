@@ -5,8 +5,25 @@
 
     HTML
     <h1>Formulário de inscrição</h1>
-
+    <style>
+    body{
+   text-align: justify; color: black;
+    }
+    h1{
+    text-align: center; color: blue;
+    }
+    p{
+    text-size-adjust: 12;
+    }
+    </style>
+    </head>
 <body>
+
+<style>
+    text{
+    text-emphasis-color: black;
+    }
+</style>
     <!--Campos do formulário-->
 
     <p>Dados Pessoais</p>
@@ -76,72 +93,80 @@
         <p>Dados de contacto</p>
 
         <!--Escolher país-->
-    </form>
-    <form action="/action_page.php" method="get">
-        <label for="pais">Escolha o país</label>
-        <input list="pais" name="pais" id="pais">
-        <datalist id="pais">
-            <option value="Portugal">
-            <option value="Espanha">
-            <option value="Alemanha">
-            <option value="Austria">
-            <option value="Bulgaria">
-            <option value="Bélgica">
-            <option value="Chipre">
-            <option value="Chéquia">
-            <option value="Croacia">
-            <option value="Dinamarca">
-            <option value="Eslovaquia">
-            <option value="Eslovenia">
-            <option value="Estonia">
-            <option value="Finlandia">
-            <option value="França">
-            <option value="Grécia">
-            <option value="Hungria">
-            <option value="Irlanda">
-            <option value="Itália">
-            <option value="Letónia">
-            <option value="Lituania">
-            <option value="Luxamburgo">
-            <option value="Malta">
-            <option value="Países baixos">
-            <option value="Roménia">
-            <option value="Polónia">
-            <option value="Suécia">
+        <p>Escolha o seu país</p>
+        <select class="combobox">
+            <option value="Select">Select....</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Espanha">Espanha</option>
+            <option value="Alemanha">Alemanha</option>
+            <option value="Austria">Austria</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Bélgica">Belgica</option>
+            <option value="Chipre">Chipre</option>
+            <option value="Chéquia">Chequia</option>
+            <option value="Croacia">Croacia</option>
+            <option value="Dinamarca">Dinamarca</option>
+            <option value="Eslovaquia">Eslovaquia</option>
+            <option value="Eslovenia">Eslovenia</option>
+            <option value="Estonia">Estonia/option>
+            <option value="Finlandia">Finlandia</option>
+            <option value="França">França</option>
+            <option value="Grécia">Grécia</option>
+            <option value="Hungria">Hungria</option>
+            <option value="Irlanda">Irlanda</option>
+            <option value="Itália">Itália</option>
+            <option value="Letónia">Letónia</option>
+            <option value="Lituania">Lituania</option>
+            <option value="Luxamburgo">Luxamburgo</option>
+            <option value="Malta">Malta</option>
+            <option value="Países baixos">Paises baixos</option>
+            <option value="Roménia">Roménia</option>
+            <option value="Polónia">Polónia</option>
+            <option value="Suécia">Suécia</option>
             </option>
-        </datalist>
-          <input type="submit">
-
-    </form>
-
-
+          </select>
+    <style>
+        .combobox {
+            padding: 8px;
+        }
+    </style>
+    </select>
+    <br> <br>
+   
     <!--Escolher distrito-->
-    <form action="/action_page.php" method="get">
-        <label for="distrito">Escolha o distrito</label>
-        <input list="distrito" name="distrito" id="distrito">
-        <datalist id="distrito">
-            <option value="Aveiro">
-            <option value="Beja">
-            <option value="Braga">
-            <option value="Bragança">
-            <option value="Castelo Branco">
-            <option value="Coimbra">
-            <option value="Évora">
-            <option value="Faro">
-            <option value="Guarda">
-            <option value="Leiria">
-            <option value="Lisboa">
-            <option value="Portalegre">
-            <option value="Porto">
-            <option value="Santarém">
-            <option value="Setúbal">
-            <option value="Viana do Castelo">
-            <option value="Vila Real">
-            <option value="Viseu">
-            </option>
-        </datalist>
-         <input type="submit">
-    </form>
+    <p>Selecione o distrito</p>
+
+
+    <select class="combobox">
+        <option value="Select">Select....</option>
+        <option value="Aveiro">Aveiro</option>
+        <option value="Braga">Braga</option>
+        <option value="Bragança">Bragança</option>
+        <option value="Beja">Beja</option>
+        <option value="Coimbra">Coimbra</option>
+        <option value="Castelo Branco">Castelo Branco</option>
+        <option value="Évora">Évora</option>
+        <option value="Faro">Faro</option>
+        <option value="Guarda">Guarda</option>
+        <option value="Leiria">Leria </option>
+        <option value="Lisboa">Lisboa</option>
+        <option value="Portalegre">Portalegre</option>
+        <option value="Santarém">Sanrarém</option>
+        <option value="Porto">Porto</option>
+        <option value="Setúbal">Setúbal</option>
+        <option value="Viana do Castelo">Viana do Castelo</option>
+        <option value="Vila Real ">Vila Real</option>
+        <option value="Viseu">Viseu</option>
+    </select>
+    <style>
+        .combobox {
+            padding: 8px;
+        }
+    </style>
+    </select>
+    
+<br> <br>
+
     <!--Concelho-->
     <form>
         <label for="concelho">concelho</label><br>
@@ -157,13 +182,14 @@
         <label for="nacionalidade">nacionalidade</label><br>
         <input type="text" id="nacionalidade" name="nacionalidade"><br>
     </form>
+<br> <br>
     <!--Campo telefone-->
     <form>
         <label for="phone">Numero telefone</label>
         <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
     </form>
     <!--Inserir email-->
-
+    <p>Insira o seu e-mail</p>
     <input type="email" placeholder="sophie@example.com" />
 
 
@@ -187,32 +213,54 @@
     </form>
     <p>Grau</p>
 
-    <select multiple name="Grau" size="4">
-        <option value="2EB" selected>2º ciclo do ensino básico</option>
-        <option value="3EB">3º ciclo do ensino básico</option>
+    <p>Selecione o seu grau</p>
+
+
+    <select class="combobox">
+        <option value="Select">Select....</option>
+        <option value="2CEB">2º ciclo do ensino básico</option>
+        <option value="3CEB">3º cilco do ensino básico</option>
         <option value="ES">Ensino secundário</option>
-        <option value="Lic">Licenciatura</option>
-        <option value="Mes">Mestrado</option>
-        <option value="Doc">Doutoramento</option>
-         <input type="submit">
-    </select><br />
+        <option value="LIC">Licenciatura</option>
+        <option value="MES">Mestrado</option>
+        <option value="DOC">Doutoramento</option>
+    </select>
+    <style>
+        .combobox {
+            padding: 8px;
+        }
+    </style>
+    </select>
+    
+<br> <br>
+
 
     <!--Situação profissional-->
     </form>
 
     <p>situação profissional</p>
 
-    <select multiple name="sitprof" size="4">
-        <option value="D1emp" selected>Desemprego 1º emprego</option>
+<p>Selecione o distrito</p>
+
+
+    <select class="combobox">
+        <option value="Select">Select....</option>
+        <option value="D1emp">Desemprego 1º emprego</option>
         <option value="DLD">desemprego superior a 1 ano</option>
         <option value="NDLD">desemprego inferior a 1 ano</option>
         <option value="EmpOut">emprego por conta de outrém</option>
         <option value="EmpProp">emprego por conta própria</option>
         <option value="InatForm">inativos frequentam ações de formação</option>
         <option value="InatOut">inativos outros</option>
-         <input type="submit">
-    </select><br />
-
+    </select>
+    <style>
+        .combobox {
+            padding: 8px;
+        }
+    </style>
+    </select>
+    
+<br> <br>
 
     <!--Botões de input documentos-->
     <p>Documentos necessários
@@ -276,10 +324,11 @@
             <input type="submit" value="submeter" />
         </form>
     </form>
-
+ <style>
+ p{
+ text-align: justify;color: blueviolet;
+ }
+ </style>
 </body>
-
-
-</head>
 
 </html>
