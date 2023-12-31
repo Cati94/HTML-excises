@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    
+    <h1>PIZZA FORM</h1>
+
+<body>
+    <!--Campos do formulário-->
+<hr>
+    <p>Personal Info</p>
+<div style="inline-size:500px;block-size:150px;border:1px solid #000;">
+
+    <!--Nome próprio e sobrenome-->
+    <form>
+    <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+    </form>
+    <!--Campo telefone-->
+    <form>
+        <label for="phone">Phone:</label><br>
+        <input type="phone" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    </form>
+    </div>
+    <p>PIZZA</p>
+<div style="inline-size:500px;block-size:230px;border:1px solid #000;">
+
+    <!--Size-->
+    <form>
+        <p>Toppigs (check all that apply):</p>
+        <input type="checkbox" name="extrachese" value="extrachese" />extra chese<br/>
+        <input type="checkbox" name="Pepperoni" value="Pepperoni" />Pepperoni<br/>
+        <input type="checkbox" name="sausage" value="sausage" />sausage<br/>
+        <input type="checkbox" name="mushrooms" value="mushrooms" />mushrooms<br/>
+        <input type="checkbox" name="blackolives" value="blackolives" />black olives<br/>
+        <input type="checkbox" name="greenpeppers" value="greenpeppers" />green peppers<br/>
+        <input type="checkbox" name="tomatos" value="tomatos" />tomatos<br/>
+        <input type="checkbox" name="onions" value="onions" />onions<br/>
+        <input type="checkbox" name="anchovies" value="anchovies" />anchovies<br/>
+    
+    <form>
+     </div>
+    <!--Botões -->
+                <!--Botão reset-->
+                    <input type="reset" value="Delete" />
+
+                    <!--Botão de envio-->
+            </form>
+            <form method="post" action="mailto:email@example.com">
+            <input type="submit" value="Enter my information" />
+            </form>
+        </form>
+</body>
+
+
+</head>
+
+</html>
